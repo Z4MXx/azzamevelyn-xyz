@@ -1,7 +1,11 @@
 "use client";
+import { useState } from "react";
 import { profile, skills, certificates, featuredProject } from "@/data/content";
+import CertModal from "@/components/CertModal";
 
 export default function Dashboard() {
+  const [selectedCert, setSelectedCert] = useState<typeof certificates[number] | null>(null);
+
   return (
     <section className="min-h-screen bg-black/50 backdrop-blur-sm px-4 py-20">
       <div className="max-w-6xl mx-auto">
@@ -43,7 +47,8 @@ export default function Dashboard() {
             {certificates.map((cert, idx) => (
               <div
                 key={idx}
-                className="rounded-lg bg-white/5 backdrop-blur-md border border-white/10 p-4"
+                onClick={() => setSelectedCert(cert)}
+                className="rounded-lg bg-white/5 backdrop-blur-md border border-white/10 p-4 cursor-pointer hover:border-[#00F0FF]/50 transition-colors"
               >
                 <p className="text-sm text-[#00F0FF] font-semibold">{cert.issuer}</p>
                 <p className="text-white mt-1">{cert.title}</p>
@@ -51,6 +56,8 @@ export default function Dashboard() {
             ))}
           </div>
         </div>
+
+        <CertModal cert={selectedCert} onClose={() => setSelectedCert(null)} />
       </div>
     </section>
   );
