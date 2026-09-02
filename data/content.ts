@@ -11,12 +11,12 @@ export const skills = {
 };
 
 export const certificates = [
-  { issuer: "Diskominfotik DKI Jakarta", title: "Responsible Disclosure Recognition" },
-  { issuer: "Kabupaten Bantul", title: "Responsible Disclosure Recognition" },
-  { issuer: "Kabupaten Gunungkidul", title: "Responsible Disclosure Recognition" },
-  { issuer: "Purbalingga CSIRT", title: "Responsible Disclosure Recognition" },
-  { issuer: "University of San Diego", title: "Letter of Recognition" },
-  { issuer: "NASA JPL", title: "Letter of Recognition" },
+  { issuer: "Diskominfotik DKI Jakarta", title: "Responsible Disclosure Recognition", image: "/certificates/jktsertif.webp" },
+  { issuer: "Kabupaten Bantul", title: "Responsible Disclosure Recognition", image: "/certificates/bantulsertif.webp" },
+  { issuer: "Kabupaten Gunungkidul", title: "Responsible Disclosure Recognition", image: "/certificates/gunungsertif.webp" },
+  { issuer: "Purbalingga CSIRT", title: "Responsible Disclosure Recognition", image: "/certificates/purbasertif.webp" },
+  { issuer: "University of San Diego", title: "Letter of Recognition", image: "/certificates/univ.webp" },
+  { issuer: "NASA JPL", title: "Letter of Recognition", image: "/certificates/nasa.webp" },
 ];
 
 export const featuredProject = {

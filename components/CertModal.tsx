@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-type Cert = { issuer: string; title: string };
+type Cert = { issuer: string; title: string; image: string };
 
 export default function CertModal({
   cert,
@@ -35,6 +35,11 @@ export default function CertModal({
         >
           ×
         </button>
+        <img
+          src={cert.image}
+          alt={cert.issuer}
+          className="w-full rounded-lg mb-4"
+        />
         <h3 className="text-xl font-semibold text-[#F9FAFB] mb-2">
           {cert.issuer}
         </h3>

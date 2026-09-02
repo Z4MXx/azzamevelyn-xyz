@@ -48,8 +48,13 @@ export default function Dashboard() {
               <div
                 key={idx}
                 onClick={() => setSelectedCert(cert)}
-                className="rounded-lg bg-white/5 backdrop-blur-md border border-white/10 p-4 cursor-pointer hover:border-[#00F0FF]/50 transition-colors"
+                className="rounded-lg bg-white/5 backdrop-blur-md border border-white/10 p-4 cursor-pointer hover:border-[#00F0FF]/50 transition-colors overflow-hidden"
               >
+                <img
+                  src={cert.image}
+                  alt={cert.issuer}
+                  className="w-full h-24 object-cover rounded-lg mb-3"
+                />
                 <p className="text-sm text-[#00F0FF] font-semibold">{cert.issuer}</p>
                 <p className="text-white mt-1">{cert.title}</p>
               </div>
