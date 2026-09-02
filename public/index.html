@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azzam Evelyn Khair</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <section class="hero">
+    <h1 class="gradient-text"><span id="typewriter"></span><span class="cursor">|</span></h1>
+    <p id="tagline" class="tagline"></p>
+  </section>
+
+  <section class="dashboard">
+    <div class="card span-3">
+      <p id="bio" class="bio-text"></p>
+    </div>
+
+    <div class="card span-2">
+      <h2>Technical Skills</h2>
+      <div id="skills"></div>
+    </div>
+
+    <a id="project-card" class="card project-card" target="_blank" rel="noopener noreferrer">
+      <h2 id="project-name"></h2>
+      <p id="project-desc"></p>
+    </a>
+
+    <div class="card span-3">
+      <h2>Certificates</h2>
+      <div id="certificates" class="cert-grid"></div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button id="modal-close">&times;</button>
+      <img id="modal-image" src="" alt="">
+      <h3 id="modal-issuer"></h3>
+      <p id="modal-title"></p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

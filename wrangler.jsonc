@@ -1,7 +1,8 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "azzamevelyn-xyz",
   "compatibility_date": "2026-08-31",
   "assets": {
-    "directory": "./out"
+    "directory": "./public"
   }
 }
